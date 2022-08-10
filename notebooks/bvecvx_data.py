@@ -2,6 +2,16 @@ from decimal import Decimal
 from typing import Dict
 from typing import List
 
+
+def get_rows_from_data(data: Dict) -> List[List[Decimal]]:
+    return [[
+        data['total_cvx_sold_in_$'], data['total_badger_sold_in_$'],
+        data['amount_cvx'],
+        data['amount_badger'], data['$/vlCVX for total votes'],
+        data['$/vlCVX without badgerwbtc'], ]
+    ]
+
+
 VOTING_DATA_R23 = {
     'round': "21st of July",
     'total_cvx_sold_in_$': Decimal('106428.420'),
@@ -22,14 +32,22 @@ BRIBES_HARVESTED_DATA_R23 = {"frax": Decimal(228333.4003595493159628450234),
                              "fpifrax": Decimal(112585.9844037608392463191238),
                              "f-badgerwbtc": Decimal(235687.1553570462402634102000)}
 
+VOTING_DATA_R24 = {
+    'round': "4th August",
+    'total_cvx_sold_in_$': Decimal('142446.574'),
+    'total_badger_sold_in_$': Decimal('53399.085'),
+    'amount_cvx': Decimal('20091.195'), 'amount_badger': Decimal('10288.841'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('5.190'),
+    'cvx_price_at_the_moment_of_sale_in_$': Decimal('7.090'),
+    '$/vlCVX for total votes': Decimal('0.080'),
+    '$/vlCVX without badgerwbtc': Decimal('0.088')}
 
-def get_rows_from_data(data: Dict) -> List[List[Decimal]]:
-    return [[
-        data['total_cvx_sold_in_$'], data['total_badger_sold_in_$'],
-        data['amount_cvx'],
-        data['amount_badger'], data['$/vlCVX for total votes'],
-        data['$/vlCVX without badgerwbtc'], ]
-    ]
+BRIBES_HARVESTED_DATA_R24 = {"frax": Decimal(14614.19678362758295371181277),
+                             "2pool-frax": Decimal(499048.4835809215986880728746),
+                             "fpifrax": Decimal(349803.5770423613211133454789),
+                             "eursusd": Decimal(611593.8229378686932526214025),
+                             "alusd": Decimal(366930.0417271141398514289506),
+                             "aleth": Decimal(374269.9551634367764534647241),
+                             "f-badgerwbtc": Decimal(230377.7348722152858835977500)}
 
-
-VOTING_DATASETS = [VOTING_DATA_R23]
+VOTING_DATASETS = [VOTING_DATA_R23, VOTING_DATA_R24]
