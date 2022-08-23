@@ -50,4 +50,24 @@ BRIBES_HARVESTED_DATA_R24 = {"frax": Decimal(14614.19678362758295371181277),
                              "aleth": Decimal(374269.9551634367764534647241),
                              "f-badgerwbtc": Decimal(230377.7348722152858835977500)}
 
-VOTING_DATASETS = [VOTING_DATA_R23, VOTING_DATA_R24]
+VOTING_DATA_R25 = {
+    'round': "18th August",
+    'total_cvx_sold_in_$': Decimal('104711.127'),
+    'total_badger_sold_in_$': Decimal('39537.871'),
+    'amount_cvx': Decimal('19426.9252'),
+    'amount_badger': Decimal('10111.9874'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('3.91'),
+    'cvx_price_at_the_moment_of_sale_in_$': Decimal('5.39'),
+    '$/vlCVX for total votes': Decimal('0.0583'),
+    '$/vlCVX without badgerwbtc': Decimal('0.0643')
+}
+
+BRIBES_HARVESTED_DATA_R25 = {"2pool-frax": Decimal(79413.61100609367262977928944),
+                             "frax": Decimal(133831.2485283798421340128355),
+                             "fpifrax": Decimal(606275.2833809552228298586112),
+                             "tusd": Decimal(541963.5299455261134157644223),
+                             "alusd": Decimal(430654.7259226680394298321723),
+                             "aleth": Decimal(450442.9577489539192495534612),
+                             "f-badgerwbtc": Decimal(230947.6217531580304679192000)}
+
+VOTING_DATASETS = [VOTING_DATA_R23, VOTING_DATA_R24, VOTING_DATA_R25]
