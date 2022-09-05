@@ -3,3 +3,4 @@ jupyterlab==3.4.4
 matplotlib==3.5.2
 tabulate==0.8.10
 pandas==1.4.3
+pycoingecko==2.2.0
