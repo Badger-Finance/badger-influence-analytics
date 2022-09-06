@@ -72,14 +72,14 @@ BRIBES_HARVESTED_DATA_R25 = {"2pool-frax": Decimal(79413.61100609367262977928944
 
 VOTING_DATA_R26 = {
     'round': "1st Sep 2022t",
-    'total_cvx_sold_in_$': Decimal('106407.8714936843484785899000'),
-    'total_badger_sold_in_$': Decimal('40399.95678454424689806168000'),
-    'amount_cvx': Decimal('19668.73779920228252839'),
-    'amount_badger': Decimal('9266.045134069781398638'),
-    'badger_price_at_the_moment_of_sale_in_$': Decimal('4.36000000'),
-    'cvx_price_at_the_moment_of_sale_in_$': Decimal('5.41000000'),
-    '$/vlCVX for total votes': Decimal('0.05767415878660661498545298424'),
-    '$/vlCVX without badgerwbtc': Decimal('0.06370720651176721251097108908')}
+    'total_cvx_sold_in_$': Decimal('106407.872'),
+    'total_badger_sold_in_$': Decimal('40399.96'),
+    'amount_cvx': Decimal('19668.74'),
+    'amount_badger': Decimal('9266.045'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('4.36'),
+    'cvx_price_at_the_moment_of_sale_in_$': Decimal('5.41'),
+    '$/vlCVX for total votes': Decimal('0.058'),
+    '$/vlCVX without badgerwbtc': Decimal('0.064')}
 
 BRIBES_HARVESTED_DATA_R26 = {"FRAX+USDC (0xDcEF...41A2)": Decimal(14975.95741255921645546083958),
                              "FRAX+3Crv (0xd632...Ed3B)": Decimal(14975.95741255921645546083958),
