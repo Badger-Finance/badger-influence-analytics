@@ -1,6 +1,9 @@
-## Badger Influence Analytics
+# Badger Influence Analytics
 
-Jupyter notebooks with various analytics
+---
+
+Notebooks with various analytics.
+Powered by Jupyter
 
 ## Bribes Research
 Check bribes research notebook [here](https://github.com/Badger-Finance/badger-influence-analytics/blob/master/notebooks/bribes_research/bribes_research.ipynb)
