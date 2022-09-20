@@ -21,7 +21,8 @@ VOTING_DATA_R23 = {
     'badger_price_at_the_moment_of_sale_in_$': Decimal('3.890'),
     'cvx_price_at_the_moment_of_sale_in_$': Decimal('6.300'),
     '$/vlCVX for total votes': Decimal('0.060'),
-    '$/vlCVX without badgerwbtc': Decimal('0.066')
+    '$/vlCVX without badgerwbtc': Decimal('0.066'),
+    'llama_vlcvx': Decimal('0.06832'),
 }
 
 BRIBES_HARVESTED_DATA_R23 = {"frax": Decimal(228333.4003595493159628450234),
@@ -40,7 +41,9 @@ VOTING_DATA_R24 = {
     'badger_price_at_the_moment_of_sale_in_$': Decimal('5.190'),
     'cvx_price_at_the_moment_of_sale_in_$': Decimal('7.090'),
     '$/vlCVX for total votes': Decimal('0.080'),
-    '$/vlCVX without badgerwbtc': Decimal('0.088')}
+    '$/vlCVX without badgerwbtc': Decimal('0.088'),
+    'llama_vlcvx': Decimal('0.09030'),
+}
 
 BRIBES_HARVESTED_DATA_R24 = {"frax": Decimal(14614.19678362758295371181277),
                              "2pool-frax": Decimal(499048.4835809215986880728746),
@@ -59,7 +62,8 @@ VOTING_DATA_R25 = {
     'badger_price_at_the_moment_of_sale_in_$': Decimal('3.91'),
     'cvx_price_at_the_moment_of_sale_in_$': Decimal('5.39'),
     '$/vlCVX for total votes': Decimal('0.0583'),
-    '$/vlCVX without badgerwbtc': Decimal('0.0643')
+    '$/vlCVX without badgerwbtc': Decimal('0.0643'),
+    'llama_vlcvx': Decimal('0.06436'),
 }
 
 BRIBES_HARVESTED_DATA_R25 = {"2pool-frax": Decimal(79413.61100609367262977928944),
@@ -79,7 +83,9 @@ VOTING_DATA_R26 = {
     'badger_price_at_the_moment_of_sale_in_$': Decimal('4.36'),
     'cvx_price_at_the_moment_of_sale_in_$': Decimal('5.41'),
     '$/vlCVX for total votes': Decimal('0.058'),
-    '$/vlCVX without badgerwbtc': Decimal('0.064')}
+    '$/vlCVX without badgerwbtc': Decimal('0.064'),
+    'llama_vlcvx': Decimal('0.06215'),
+}
 
 BRIBES_HARVESTED_DATA_R26 = {"FRAX+USDC (0xDcEF...41A2)": Decimal(14975.95741255921645546083958),
                              "FRAX+3Crv (0xd632...Ed3B)": Decimal(14975.95741255921645546083958),
@@ -89,4 +95,27 @@ BRIBES_HARVESTED_DATA_R26 = {"FRAX+USDC (0xDcEF...41A2)": Decimal(14975.95741255
                              "ETH+alETH (0xC4C3...784e)": Decimal(608070.4169452354893769956868),
                              "BADGER+WBTC (0x50f3...685d)": Decimal(241055.3273669102916382362500)}
 
-VOTING_DATASETS = [VOTING_DATA_R23, VOTING_DATA_R24, VOTING_DATA_R25, VOTING_DATA_R26]
+VOTING_DATA_R27 = {
+    'round': "15th September",
+    'total_cvx_sold_in_$': Decimal('86649.570'),
+    'total_badger_sold_in_$': Decimal('32621.784'),
+    'amount_cvx': Decimal('18334.653'),
+    'amount_badger': Decimal('8279.641'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('3.94'),
+    'cvx_price_at_the_moment_of_sale_in_$': Decimal('4.726'),
+    '$/vlCVX for total votes': Decimal('0.047'),
+    '$/vlCVX without badgerwbtc': Decimal('0.052'),
+    'llama_vlcvx': Decimal('0.059'),
+}
+
+BRIBES_HARVESTED_DATA_R27 = {"FRAX+3Crv": 523768.0775055959188242345514,
+                             "FRAX+USDC": 147193.6139976382742690570023,
+                             "FRAX+FPI": 70860.95247575496794030479476,
+                             "USDD+3Crv": 437257.7277807948383183153855,
+                             "TUSD+3Crv": 488146.1687953837092041501890,
+                             "ApeUSD+crvFRAX": 635722.6477376914347730711191,
+                             "BADGER+WBTC": 241472.8624365842597188099500}
+
+VOTING_DATASETS = [
+    VOTING_DATA_R23, VOTING_DATA_R24, VOTING_DATA_R25, VOTING_DATA_R26, VOTING_DATA_R27
+]
