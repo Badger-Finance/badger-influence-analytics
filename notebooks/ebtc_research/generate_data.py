@@ -11,6 +11,11 @@ SIMULATED_VOLUME = 1000000
 
 
 def _generate_probabilities() -> Tuple[List, List]:
+    """
+    Generates two tables:
+    1. Fees values with probability_step_down variable down
+    2. Fees probabilities, the lower the fee - the higher probability of fee to appear
+    """
     initial_probability = 50
     probability_step_down = 4
     possible_fees = []
