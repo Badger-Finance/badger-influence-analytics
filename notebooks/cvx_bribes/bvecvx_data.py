@@ -116,6 +116,20 @@ BRIBES_HARVESTED_DATA_R27 = {"FRAX+3Crv": 523768.0775055959188242345514,
                              "ApeUSD+crvFRAX": 635722.6477376914347730711191,
                              "BADGER+WBTC": 241472.8624365842597188099500}
 
+VOTING_DATA_R28 = {
+    'round': "29th Sep 2022",
+    'total_cvx_sold_in_$': Decimal('106512.74'),
+    'total_badger_sold_in_$': Decimal('40568.72'),
+    'amount_cvx': Decimal('20483.22'),
+    'amount_badger': Decimal('11145.25'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('3.64'),
+    'cvx_price_at_the_moment_of_sale_in_$': Decimal('5.2'),
+    '$/vlCVX for total votes': Decimal('0.058'),
+    '$/vlCVX without badgerwbtc': Decimal('0.064'),
+    'llama_vlcvx': Decimal('0.05939'),
+}
+
 VOTING_DATASETS = [
-    VOTING_DATA_R23, VOTING_DATA_R24, VOTING_DATA_R25, VOTING_DATA_R26, VOTING_DATA_R27
+    VOTING_DATA_R23, VOTING_DATA_R24, VOTING_DATA_R25, VOTING_DATA_R26, VOTING_DATA_R27,
+    VOTING_DATA_R28,
 ]
