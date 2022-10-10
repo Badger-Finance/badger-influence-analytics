@@ -5,3 +5,6 @@ tabulate==0.8.10
 pandas==1.4.3
 pycoingecko==2.2.0
 jupyter-contrib-nbextensions==0.5.1
+python-dotenv
+web3==5.31.1
+gql[requests]==3.1.0
