@@ -38,4 +38,19 @@ VOTING_DATA_R7 = {
     'llama_vlaura': Decimal('0.066'),
 }
 
-VOTING_ROUNDS = [VOTING_DATA_R6, VOTING_DATA_R7]
+# For R8 voter voted 10% for badger-wbtc pool and harvested bribes that weren't sold
+# so they don't take part in the calculations
+VOTING_DATA_R8 = {
+    'round': "29th September 2022",
+    'total_graviaura_bought_in_$': Decimal('22640.234'),
+    'total_badger_bought_in_$': Decimal('7509.109'),
+    'amount_graviaura_bought': Decimal('11853.53'),
+    'amount_badger_bought': Decimal('2013.17'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('3.73'),
+    'graviaura_price_at_the_moment_of_sale_in_$': Decimal(
+        '1.91'),
+    '$/vlAURA for total votes': Decimal('0.033'),
+    '$/vlAURA without pools': Decimal('0.064'),
+    'llama_vlaura': Decimal('0.063'),
+}
+VOTING_ROUNDS = [VOTING_DATA_R6, VOTING_DATA_R7, VOTING_DATA_R8]
