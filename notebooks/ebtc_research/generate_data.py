@@ -76,7 +76,6 @@ def get_tables_mimlike() -> Tuple[List, List]:
         volumes.append(SIMULATED_VOLUME * volume_multiplier)
 
     revenue_table = []
-    revenue_table_fees_leverage = []
     for sim_volume in volumes:
         revenue_table.append(
             [
@@ -101,4 +100,5 @@ def get_tables_mimlike() -> Tuple[List, List]:
                     f"{min_fee * 100}%",
                     leverage
                 ])
+        revenue_table.append(["-", "-", "-", "-", "-"])
     return revenue_table, volumes
