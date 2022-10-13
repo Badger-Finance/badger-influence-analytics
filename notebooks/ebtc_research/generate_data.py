@@ -6,7 +6,7 @@ import numpy as np
 
 MINIMAL_FEE = 0.005  # in %
 MAX_FEE = 0.05  # in %
-# Starting with 10m volume
+# Starting with 1m volume
 SIMULATED_VOLUME = 1000000
 MIM_LEVERAGES = [1, 2, 3, 4, 5, 6]
 LEVERAGE_PROBABILITIES = [50, 40, 30, 20, 10, 1]
