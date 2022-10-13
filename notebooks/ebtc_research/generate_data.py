@@ -11,6 +11,10 @@ SIMULATED_VOLUME = 1000000
 MIM_LEVERAGES = [2, 3, 4, 5, 6]
 LEVERAGE_PROBABILITIES = [50, 40, 30, 20, 10, 1]
 
+VOLUMES = []
+for volume_multiplier in range(1, 16):
+    VOLUMES.append(SIMULATED_VOLUME * volume_multiplier)
+
 
 def _generate_probabilities(
         initial_prob=50, minimal_value=MINIMAL_FEE, max_value=MAX_FEE,
@@ -34,15 +38,12 @@ def _generate_probabilities(
 
 def get_tables() -> Tuple[List, List, List, List, List]:
     possible_fees, probabilities = _generate_probabilities()
-    volumes = []
-    for volume_multiplier in range(1, 16):
-        volumes.append(SIMULATED_VOLUME * volume_multiplier)
     revenue_table_minimal_fees = []
     revenue_table_minimal_fees_double = []
     revenue_table_randomized_fees = []
     revenue_table_randomized_fees_double = []
 
-    for sim_volume in volumes:
+    for sim_volume in VOLUMES:
         revenue_table_minimal_fees.append(
             ["{:10.4f}".format(sim_volume), sim_volume * MINIMAL_FEE, f"{MINIMAL_FEE * 100}%"])
         revenue_table_minimal_fees_double.append(
@@ -62,7 +63,7 @@ def get_tables() -> Tuple[List, List, List, List, List]:
         revenue_table_minimal_fees_double,
         revenue_table_randomized_fees,
         revenue_table_randomized_fees_double,
-        volumes)
+        VOLUMES)
 
 
 def get_tables_mimlike() -> Tuple[List, List]:
@@ -70,13 +71,10 @@ def get_tables_mimlike() -> Tuple[List, List]:
     Simulated fees capture on MIM-like protocol
     """
     fees_capture = 0.3  # in %
-    min_fee = 0.005
-    volumes = []
-    for volume_multiplier in range(1, 16):
-        volumes.append(SIMULATED_VOLUME * volume_multiplier)
+    borrow_fee = 0.005  # in %
 
     revenue_table = []
-    for sim_volume in volumes:
+    for sim_volume in VOLUMES:
         revenue_table.append(
             [
                 # Volume
@@ -84,9 +82,9 @@ def get_tables_mimlike() -> Tuple[List, List]:
                 # Treasury capture
                 f"{fees_capture * 100}%",
                 # Revenue from fees + capture %
-                (sim_volume * min_fee) * fees_capture,
+                (sim_volume * borrow_fee) * fees_capture,
                 # Fee itself
-                f"{min_fee * 100}%",
+                f"{borrow_fee * 100}%",
                 # Leverage
                 1,
             ]
@@ -96,9 +94,9 @@ def get_tables_mimlike() -> Tuple[List, List]:
                 [
                     "{:10.4f}".format(sim_volume),
                     f"{fees_capture * 100}%",
-                    (sim_volume * leverage) * min_fee,
-                    f"{min_fee * 100}%",
+                    (sim_volume * leverage) * borrow_fee,
+                    f"{borrow_fee * 100}%",
                     leverage
                 ])
         revenue_table.append(["-", "-", "-", "-", "-"])
-    return revenue_table, volumes
+    return revenue_table, VOLUMES
