@@ -86,3 +86,7 @@ def get_tables_mimlike() -> Tuple[List, List]:
                 ])
         revenue_table.append(["-", "-", "-", "-", "-"])
     return revenue_table, VOLUMES
+
+
+def get_tables_dai_like() -> Tuple:
+    dai_fees = [0.005, ]  # in %
