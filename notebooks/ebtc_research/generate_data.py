@@ -9,8 +9,10 @@ MAX_FEE = 0.05  # in %
 # Starting with 1m volume
 SIMULATED_VOLUME = 1000000
 MIM_LEVERAGES = [1, 2, 3, 4, 5, 6]
-LEVERAGE_PROBABILITIES = [50, 40, 30, 20, 10, 1]
+
 DAI_FEES = [0.005, 0.015, 0.03]  # in %
+DAI_MULTIPLY_FEES_PAIRS = [(4.33, 0.03), (3.22, 0.015), (2.42, 0.005)]
+
 VOLUMES = []
 
 for volume_multiplier in range(1, 16):
@@ -100,4 +102,19 @@ def get_tables_dai_like() -> List:
                     fee,
                 ])
         revenue_table.append(["-", "-", "-",])
+    return revenue_table
+
+
+def get_tables_dai_like_multiply() -> List:
+    revenue_table = []
+    for sim_volume in VOLUMES:
+        for multiply, fee in DAI_MULTIPLY_FEES_PAIRS:
+            revenue_table.append(
+                [
+                    "{:10.4f}".format(sim_volume),
+                    (multiply * sim_volume) * fee,
+                    fee,
+                    multiply,
+                ])
+        revenue_table.append(["-", "-", "-", "-"])
     return revenue_table
