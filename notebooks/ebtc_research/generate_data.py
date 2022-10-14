@@ -10,8 +10,9 @@ MAX_FEE = 0.05  # in %
 SIMULATED_VOLUME = 1000000
 MIM_LEVERAGES = [1, 2, 3, 4, 5, 6]
 LEVERAGE_PROBABILITIES = [50, 40, 30, 20, 10, 1]
-
+DAI_FEES = [0.005, 0.015, 0.03]  # in %
 VOLUMES = []
+
 for volume_multiplier in range(1, 16):
     VOLUMES.append(SIMULATED_VOLUME * volume_multiplier)
 
@@ -88,5 +89,15 @@ def get_tables_mimlike() -> Tuple[List, List]:
     return revenue_table, VOLUMES
 
 
-def get_tables_dai_like() -> Tuple:
-    dai_fees = [0.005, ]  # in %
+def get_tables_dai_like() -> List:
+    revenue_table = []
+    for sim_volume in VOLUMES:
+        for fee in DAI_FEES:
+            revenue_table.append(
+                [
+                    "{:10.4f}".format(sim_volume),
+                    sim_volume * fee,
+                    fee,
+                ])
+        revenue_table.append(["-", "-", "-",])
+    return revenue_table
