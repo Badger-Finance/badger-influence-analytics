@@ -35,6 +35,7 @@ Uncovered functions are:
 - `withdrawETHGainToTrove`
 
 But they are covered in other tests a lot of times, so all good here
+
 --- 
 ### Missing coverage on `HintHelpers.sol`
 - There is one statement missing coverage in `HintHelpers.sol` in function `getApproxHint`:
