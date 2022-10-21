@@ -53,4 +53,18 @@ VOTING_DATA_R8 = {
     '$/vlAURA without pools': Decimal('0.064'),
     'llama_vlaura': Decimal('0.063'),
 }
-VOTING_ROUNDS = [VOTING_DATA_R6, VOTING_DATA_R7, VOTING_DATA_R8]
+
+VOTING_DATA_R9 = {
+    'round': "13th October 2022",
+    'total_graviaura_bought_in_$': Decimal('16943.89'),
+    'total_badger_bought_in_$': Decimal('5084.28'),
+    'amount_graviaura_bought': Decimal('6915.87'),
+    'amount_badger_bought': Decimal('1540.69'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('3.3'),
+    'graviaura_price_at_the_moment_of_sale_in_$': Decimal('2.45'),
+    '$/vlAURA for total votes': Decimal('0.0273'),
+    '$/vlAURA without pools': Decimal('0.0600'),
+    'llama_vlaura': Decimal('0.059'),
+}
+
+VOTING_ROUNDS = [VOTING_DATA_R6, VOTING_DATA_R7, VOTING_DATA_R8, VOTING_DATA_R9]
