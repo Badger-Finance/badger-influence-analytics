@@ -181,7 +181,21 @@ VOTING_DATA_R32 = {
     'llama_vlcvx': Decimal('0.03976'),
 }
 
+VOTING_DATA_R33 = {
+    'round': "8th Dec 2022",
+    'total_cvx_sold_in_$': Decimal('46306.37'),
+    'total_badger_sold_in_$': Decimal('17576.08'),
+    'amount_cvx': Decimal('11661.14'),
+    'amount_badger': Decimal('6812.44'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('2.6'),
+    'cvx_price_at_the_moment_of_sale_in_$': Decimal('3.97'),
+    '$/vlCVX for total votes': Decimal('0.037'),
+    '$/vlCVX without badgerwbtc': Decimal('0.0424'),
+    'llama_vlcvx': Decimal('0.03958'),
+}
+
 VOTING_DATASETS = [
     VOTING_DATA_R23, VOTING_DATA_R24, VOTING_DATA_R25, VOTING_DATA_R26, VOTING_DATA_R27,
     VOTING_DATA_R28, VOTING_DATA_R29, VOTING_DATA_R30, VOTING_DATA_R31, VOTING_DATA_R32,
+    VOTING_DATA_R33,
 ]
