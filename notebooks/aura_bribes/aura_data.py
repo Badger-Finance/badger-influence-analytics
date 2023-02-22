@@ -121,7 +121,7 @@ VOTING_DATA_R13 = {
 }
 
 VOTING_DATA_R14 = {
-    'round': "8th December 2022",
+    'round': "22nd December 2022",
     'total_graviaura_bought_in_$': Decimal('4685.42'),
     'total_badger_bought_in_$': Decimal('3397.56'),
     'amount_graviaura_bought': Decimal('2342.71'),
@@ -133,7 +133,60 @@ VOTING_DATA_R14 = {
     'llama_vlaura': Decimal('0.032'),
 }
 
+VOTING_DATA_R15 = {
+    'round': "5th January 2023",
+    'total_graviaura_bought_in_$': Decimal('12581.9'),
+    'total_badger_bought_in_$': Decimal('3067.55'),
+    'amount_graviaura_bought': Decimal('5719.07'),
+    'amount_badger_bought': Decimal('1305.34'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('2.35'),
+    'graviaura_price_at_the_moment_of_sale_in_$': Decimal('2.6'),
+    '$/vlAURA for total votes': Decimal('0.027'),
+    '$/vlAURA without pools': Decimal('0.037'),
+    'llama_vlaura': Decimal('0.02629'),
+}
+
+VOTING_DATA_R16 = {
+    'round': "19th January 2023",
+    'total_graviaura_bought_in_$': Decimal('13314.44'),
+    'total_badger_bought_in_$': Decimal('5887.4'),
+    'amount_graviaura_bought': Decimal('6052.11'),
+    'amount_badger_bought': Decimal('2009.34'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('2.93'),
+    'graviaura_price_at_the_moment_of_sale_in_$': Decimal('2.87'),
+    '$/vlAURA for total votes': Decimal('0.028'),
+    '$/vlAURA without pools': Decimal('0.0383'),
+    'llama_vlaura': Decimal('0.03795'),
+}
+
+VOTING_DATA_R17 = {
+    'round': "2nd February 2023",
+    'total_graviaura_bought_in_$': Decimal('13922.47'),
+    'total_badger_bought_in_$': Decimal('6332.041'),
+    'amount_graviaura_bought': Decimal('6328.26'),
+    'amount_badger_bought': Decimal('1978.762'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('3.2'),
+    'graviaura_price_at_the_moment_of_sale_in_$': Decimal('3.1'),
+    '$/vlAURA for total votes': Decimal('0.029'),
+    '$/vlAURA without pools': Decimal('0.040'),
+    'llama_vlaura': Decimal('0.04351'),
+}
+
+VOTING_DATA_R18 = {
+    'round': "16th February 2023",
+    'total_graviaura_bought_in_$': Decimal('9513.6'),
+    'total_badger_bought_in_$': Decimal('0'),
+    'amount_graviaura_bought': Decimal('3109.026'),
+    'amount_badger_bought': Decimal('0'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('0'),
+    'graviaura_price_at_the_moment_of_sale_in_$': Decimal('3.25'),
+    '$/vlAURA for total votes': Decimal('0.01'),
+    '$/vlAURA without pools': Decimal('0.02'),
+    'llama_vlaura': Decimal('0.06352'),
+}
+
 VOTING_ROUNDS = [
     VOTING_DATA_R6, VOTING_DATA_R7, VOTING_DATA_R8, VOTING_DATA_R9, VOTING_DATA_R10,
-    VOTING_DATA_R11, VOTING_DATA_R12, VOTING_DATA_R13, VOTING_DATA_R14
+    VOTING_DATA_R11, VOTING_DATA_R12, VOTING_DATA_R13, VOTING_DATA_R14, VOTING_DATA_R15,
+    VOTING_DATA_R16, VOTING_DATA_R17, VOTING_DATA_R18
 ]
