@@ -233,8 +233,35 @@ VOTING_DATA_R36 = {
     'llama_vlcvx': Decimal('0.05192'),
 }
 
+VOTING_DATA_R37 = {
+    'round': '2nd Feb 2023',
+    'total_cvx_sold_in_$': Decimal('86607.064'),
+    'total_badger_sold_in_$': Decimal('32472.64'),
+    'amount_cvx': Decimal('13279.22'),
+    'amount_badger': Decimal('10179.51'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('3.19'),
+    'cvx_price_at_the_moment_of_sale_in_$': Decimal('6.522'),
+    '$/vlCVX for total votes': Decimal('0.0653'),
+    '$/vlCVX without badgerwbtc': Decimal('0.0687'),
+    'llama_vlcvx': Decimal('0.06227'),
+}
+
+VOTING_DATA_R38 = {
+    'round': '16th Feb 2023',
+    'total_cvx_sold_in_$': Decimal('76085.11'),
+    'total_badger_sold_in_$': Decimal('28574.99'),
+    'amount_cvx': Decimal('12052.13'),
+    'amount_badger': Decimal('8297.04'),
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('3.444'),
+    'cvx_price_at_the_moment_of_sale_in_$': Decimal('6.31'),
+    '$/vlCVX for total votes': Decimal('0.059'),
+    '$/vlCVX without badgerwbtc': Decimal('0.063'),
+    'llama_vlcvx': Decimal('0.06293'),
+}
+
 VOTING_DATASETS = [
     VOTING_DATA_R23, VOTING_DATA_R24, VOTING_DATA_R25, VOTING_DATA_R26, VOTING_DATA_R27,
     VOTING_DATA_R28, VOTING_DATA_R29, VOTING_DATA_R30, VOTING_DATA_R31, VOTING_DATA_R32,
-    VOTING_DATA_R33, VOTING_DATA_R34, VOTING_DATA_R35, VOTING_DATA_R36
+    VOTING_DATA_R33, VOTING_DATA_R34, VOTING_DATA_R35, VOTING_DATA_R36, VOTING_DATA_R37,
+    VOTING_DATA_R38
 ]
