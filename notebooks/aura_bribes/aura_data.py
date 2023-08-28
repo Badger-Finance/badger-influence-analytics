@@ -343,10 +343,24 @@ VOTING_DATA_R30 = {
     'llama_vlaura': Decimal('0.03424'),
 }
 
+VOTING_DATA_R31 = {
+    'round': '23rd August 2023',
+    'total_graviaura_bought_in_$': Decimal('412.5'),
+    'total_badger_bought_in_$': Decimal('137.5'), 
+    'amount_graviaura_bought': Decimal('345.679'), 
+    'amount_badger_bought': Decimal('69.698'), 
+    'badger_price_at_the_moment_of_sale_in_$': Decimal('1.97'), 
+    'graviaura_price_at_the_moment_of_sale_in_$': Decimal('1.19'), 
+    '$/vlAURA for total votes': Decimal('0.002'), 
+    '$/vlAURA without pools': Decimal('0.0267'),
+    'llama_vlaura': Decimal('0.03424'),
+}
+
 VOTING_ROUNDS = [
     VOTING_DATA_R6, VOTING_DATA_R7, VOTING_DATA_R8, VOTING_DATA_R9, VOTING_DATA_R10,
     VOTING_DATA_R11, VOTING_DATA_R12, VOTING_DATA_R13, VOTING_DATA_R14, VOTING_DATA_R15,
     VOTING_DATA_R16, VOTING_DATA_R17, VOTING_DATA_R18, VOTING_DATA_R19, VOTING_DATA_R20,
     VOTING_DATA_R21, VOTING_DATA_R22, VOTING_DATA_R23, VOTING_DATA_R24, VOTING_DATA_R25,
-    VOTING_DATA_R26, VOTING_DATA_R27, VOTING_DATA_R28, VOTING_DATA_R29, VOTING_DATA_R30
+    VOTING_DATA_R26, VOTING_DATA_R27, VOTING_DATA_R28, VOTING_DATA_R29, VOTING_DATA_R30,
+    VOTING_DATA_R31,
 ]
